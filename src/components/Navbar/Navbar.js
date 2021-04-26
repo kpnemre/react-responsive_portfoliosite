@@ -71,7 +71,7 @@ const Navbar = () => {
                   </Link>
                 ) : (
                   <Link
-                    to="/sign-in"
+                    to="/sign-up"
                     className="btn-link"
                     onClick={closeMobileMenü}
                   >
