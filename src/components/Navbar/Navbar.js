@@ -47,7 +47,7 @@ const Navbar = () => {
 
               <li className="nav-item">
                 <Link
-                  to="/sevices"
+                  to="/services"
                   className="nav-links"
                   onClick={closeMobileMenü}
                 >
@@ -67,7 +67,7 @@ const Navbar = () => {
               <li className="nav-btn">
                 {button ? (
                   <Link to="/sign-up" className="btn-link">
-                    <Button buttonStyle="btn--outline">Sign Up</Button>
+                    <Button buttonStyle="btn--outline" buttonSize="btn--medium">Sign Up</Button>
                   </Link>
                 ) : (
                   <Link
