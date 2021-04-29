@@ -19,7 +19,7 @@ const HeroSection = ({
     return (
         <>
             <div className={lightBg ? "home__hero-section" : "home__hero-section darkBg"} >
-               <div className="contaner">
+               <div className="container">
                    <div className="row home__home-row">
                        <div className="col">
                            <div className="home__hero-text-wrapper">
