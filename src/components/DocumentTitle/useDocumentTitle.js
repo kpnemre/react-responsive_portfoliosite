@@ -1,5 +1,4 @@
 import { useRef, useEffect } from 'react';
-import Helmet from "react-helmet";
 
 
 function useDocumentTitle(title, prevailOnUnmount = false) {
