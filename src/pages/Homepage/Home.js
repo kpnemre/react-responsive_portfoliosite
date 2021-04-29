@@ -4,13 +4,15 @@ import Pricing from '../../components/Pricing/Pricing';
 import {homeObjOne,homeObjTwo,homeObjThree,homeObjFour} from './Data.js';
 import useDocumentTitle from '../../components/DocumentTitle/useDocumentTitle';
 
+
+
 const Home =()=> {
 
     useDocumentTitle('Homepage')
 
     return (
         <>
-        
+
            <HeroSection {...homeObjOne}/>
            <HeroSection {...homeObjTwo}/>
            <Pricing />
