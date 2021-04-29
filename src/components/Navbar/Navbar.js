@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { MdFingerprint } from "react-icons/md";
@@ -8,8 +8,26 @@ import "./Navbar.css";
 
 const Navbar = () => {
   const [click, setClick] = useState(false);
-  const [button, setButton] = useState(false);
+  const [button, setButton] = useState(true);
   // const handleClick =()=>setClick(!click)
+
+
+useEffect(() => {
+  showButton()
+  handleClick()
+}, [])
+
+  const showButton = () => {
+    if (window.innerWidth <= 960) {
+      setButton(false);
+    } else {
+      setButton(true);
+    }
+    console.log("rendering")
+  };
+
+  window.addEventListener("resize", showButton);
+
 
   const handleClick = () => {
     setClick((prevstate) => !prevstate);
@@ -17,14 +35,8 @@ const Navbar = () => {
   const closeMobileMenü = () => {
     setClick(false);
   };
-  const showButton = () => {
-    if (window.innerWidth <= 960) {
-      setButton(false);
-    } else {
-      setButton(true);
-    }
-  };
-  window.addEventListener("resize", showButton);
+
+
 
   return (
     <>

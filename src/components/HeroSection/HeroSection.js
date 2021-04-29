@@ -1,11 +1,10 @@
-import React,{useState} from 'react';
+import React from 'react';
 import './HeroSection.css';
 import { Link } from "react-router-dom";
 import Button from "../Button/Button";
 
 const HeroSection = ({
     lightBg,
-    topLine,
     lightText,
     lightTextDesc,
     headline,
@@ -13,7 +12,7 @@ const HeroSection = ({
     buttonLabel,
     img,
     alt,
-    imgStart
+
 }) => {
 
 // const [lightBg, setLightBg] = useState(true)
